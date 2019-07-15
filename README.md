@@ -1,7 +1,8 @@
-# 笔记说明
-todo
+## 创建书籍
+gitbook init
 
-## 启动
+## 编译书籍
 gitbook serve
+
 
 

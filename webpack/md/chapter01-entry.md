@@ -1,12 +1,12 @@
 ## entry 单个入口写法
 ```
-{
+module.exports = {
   entry: './path/to/my/entry/file.js'
 }
 ```
 相当于
 ```
-{
+module.exports = {
   entry: {
     main: './path/to/my/entry/file.js'
   }
@@ -15,17 +15,22 @@
 
 ## entry 对象写法
 ```
-entry: {
-  app: './src/app.js',
-  adminApp: './src/adminApp.js'
+module.exports = {
+  entry: {
+    app: './src/app.js',
+    adminApp: './src/adminApp.js'
+  }
 }
 ```
 
 ## output 用法
 ```
-output: {
-  filename: 'bundle.js',
+module.exports = {
+  output: {
+    filename: 'bundle.js',
+  }
 }
+
 ```
 filename: 用于指定输出文件的文件名，输出一个 bundle.js 到 dist 目录下
 
