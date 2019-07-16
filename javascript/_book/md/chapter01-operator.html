@@ -1,0 +1,395 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>操作符 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="chapter01-operator.html">
+            
+                <a href="chapter01-operator.html">
+            
+                    
+                    操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >操作符</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x64CD;&#x4F5C;&#x7B26;">&#x64CD;&#x4F5C;&#x7B26;</h1>
+<p>ECMA&#x64CD;&#x4F5C;&#x7B26;&#x5305;&#x62EC;&#x7B97;&#x672F;&#x64CD;&#x4F5C;&#x7B26;&#xFF08;&#x52A0;&#x51CF;&#x53F7;&#xFF09;&#x3001;&#x4F4D;&#x64CD;&#x4F5C;&#x7B26;&#x3001;&#x5173;&#x7CFB;&#x64CD;&#x4F5C;&#x7B26;&#x548C;&#x76F8;&#x7B49;&#x64CD;&#x4F5C;&#x7B26;&#x3002;&#x4E0E;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x7684;&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#x5728;&#x4E8E;&#xFF0C;&#x4ED6;&#x4EEC;&#x80FD;&#x591F;&#x9002;&#x7528;&#x4E8E;&#x5F88;&#x591A;&#x503C;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x6570;&#x503C;&#x3001;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x751A;&#x81F3;&#x5BF9;&#x8C61;&#x3002;&#x4E0D;&#x8FC7;&#x5E94;&#x7528;&#x5728;&#x5BF9;&#x8C61;&#x4E0A;&#x901A;&#x5E38;&#x4F1A;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684; valueOf() &#x6216; toString() &#x65B9;&#x6CD5;&#xFF0C;&#x4EE5;&#x4FBF;&#x53D6;&#x5F97;&#x64CD;&#x4F5C;&#x503C;</p>
+<h2 id="&#x4E00;&#x5143;&#x64CD;&#x4F5C;&#x7B26;">&#x4E00;&#x5143;&#x64CD;&#x4F5C;&#x7B26;</h2>
+<p>&#x542B;&#x4E49;&#xFF1A;&#x53EA;&#x80FD;&#x64CD;&#x4F5C;&#x4E00;&#x4E2A;&#x503C;&#x7684;&#x64CD;&#x4F5C;&#x7B26;&#x53EB;&#x505A;&#x4E00;&#x5143;&#x64CD;&#x4F5C;&#x7B26;<br>
+&#x5206;&#x7C7B;&#xFF1A;&#x4E00;&#x5143;&#x9012;&#x589E;&#x9012;&#x51CF;&#x64CD;&#x4F5C;&#x7B26;&#x3001;&#x4E00;&#x5143;&#x52A0;&#x51CF;&#x64CD;&#x4F5C;&#x7B26;</p>
+<p><strong>&#x4E00;&#x5143;&#x9012;&#x589E;&#x9012;&#x51CF;&#x64CD;&#x4F5C;&#x7B26;&#xFF1A;</strong></p>
+<ol>
+<li>&#x524D;&#x7F6E;&#x9012;&#x589E;&#x9012;&#x51CF;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x90FD;&#x662F;&#x5728;&#x8BED;&#x53E5;&#x88AB;&#x6C42;&#x503C;&#x4E4B;&#x524D;&#x88AB;&#x6539;&#x53D8;&#x7684;<pre><code>var a1 = 2;
+var c = --a1 + 2;         // &#x6C42;&#x503C;&#x4E4B;&#x524D;&#x88AB;&#x6539;&#x53D8;
+console.log(c);           // 2
+</code></pre></li>
+<li>&#x540E;&#x7F6E;&#x9012;&#x589E;&#x9012;&#x51CF;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x90FD;&#x662F;&#x5728;&#x8BED;&#x53E5;&#x88AB;&#x6C42;&#x503C;&#x4E4B;&#x540E;&#x6539;&#x53D8;&#x7684;<pre><code>var a2 = 2;
+var d = a2-- + 2;         // &#x6C42;&#x503C;&#x4E4B;&#x540E;&#x88AB;&#x6539;&#x53D8;
+console.log(d);           // 3
+</code></pre></li>
+<li>&#x9012;&#x589E;&#x9012;&#x51CF;&#x64CD;&#x4F5C;&#x7B26;&#x7528;&#x4E8E;&#x9664;&#x4E86;&#x6574;&#x6570;&#x7684;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x5916;&#xFF0C;&#x9075;&#x5FAA;&#x5148;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x5728;&#x6267;&#x884C;&#x64CD;&#x4F5C;&#x7684;&#x89C4;&#x5219;<pre><code>var e1 = &apos;2&apos;;
+var f1 = --e1 + 2;
+var e2 = &apos;a&apos;;
+var f2 = --e2 + 2;
+var e3 = true;
+var f3 = --e3 + 2;
+var e4 = false;
+var f4 = --e4 + 2;
+var e5 = 1.3;
+var f5 = --e5;
+var e6 = {
+ valueOf: function() {
+ return 1;
+ }
+}
+var f6 = --e6;
+var e7 = {
+ valueOf: function() {
+ return &apos;a&apos;;
+ }
+}
+var f7 = --e7;
+console.log(f1);        // &#x6570;&#x5B57;3
+console.log(f2);        // NaN
+console.log(f3);        // &#x6570;&#x5B57;2
+console.log(f4);        // 1
+console.log(f5);        // .3
+console.log(f6);        // 0
+console.log(f7);        // NaN
+</code></pre></li>
+</ol>
+<p><strong>&#x4E00;&#x5143;&#x52A0;&#x51CF;&#x64CD;&#x4F5C;&#x7B26;&#xFF1A;</strong></p>
+<ol>
+<li>&#x4E00;&#x5143;&#x52A0;&#x653E;&#x5728;&#x6570;&#x503C;&#x524D;&#x9762;&#xFF0C;&#x4E0D;&#x4F1A;&#x4EA7;&#x751F;&#x4EFB;&#x4F55;&#x5F71;&#x54CD;&#xFF0C;&#x653E;&#x5728;&#x975E;&#x6570;&#x503C;&#x524D;&#x9762;&#xFF0C;&#x6539;&#x64CD;&#x4F5C;&#x7B26;&#x4F1A;&#x50CF; Number() &#x8F6C;&#x578B;&#x51FD;&#x6570;&#x4E00;&#x6837;&#x6267;&#x884C;&#x8F6C;&#x6362;</li>
+<li>&#x4E00;&#x5143;&#x51CF;&#x7528;&#x4E8E;&#x975E;&#x6570;&#x503C;&#x524D;&#x9762;&#xFF0C;&#x548C;&#x4E00;&#x5143;&#x52A0;&#x6267;&#x884C;&#x76F8;&#x540C;&#x64CD;&#x4F5C;&#xFF0C;&#x6700;&#x540E;&#x518D;&#x5C06;&#x5F97;&#x5230;&#x7684;&#x6570;&#x503C;&#x8F6C;&#x4E3A;&#x8D1F;&#x6570;</li>
+</ol>
+<h2 id="&#x4F4D;&#x64CD;&#x4F5C;&#x7B26;">&#x4F4D;&#x64CD;&#x4F5C;&#x7B26;</h2>
+<p>ECMA&#x4E2D;&#x6240;&#x6709;&#x6570;&#x503C;&#x90FD;&#x662F; IEEE-754 64&#x4F4D;&#x683C;&#x5F0F;&#x5B58;&#x50A8;&#xFF0C;&#x4F46;&#x4F4D;&#x64CD;&#x4F5C;&#x4E0D;&#x76F4;&#x63A5;&#x64CD;&#x4F5C;64&#x4F4D;&#x7684;&#x503C;&#xFF0C;&#x800C;&#x662F;&#x5C06;64&#x4F4D;&#x7684;&#x503C;&#x8F6C;&#x4E3A;32&#x4F4D;&#x6574;&#x6570;&#x5728;&#x6267;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x6700;&#x540E;&#x518D;&#x5C06;&#x7ED3;&#x679C;&#x8F6C;&#x6362;&#x56DE;64&#x4F4D;&#x3002;&#x5BF9;&#x4E8E;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x6765;&#x8BF4;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x5C31;&#x50CF;&#x53EA;&#x5B58;&#x5728;32&#x4F4D;&#x6574;&#x6570;&#x4E00;&#x6837;<br></p>
+<p>&#x5BF9;&#x4E8E;&#x6709;&#x7B26;&#x53F7;&#x7684;&#x6574;&#x6570;&#xFF0C;32&#x4F4D;&#x4E2D;&#x524D;31&#x4F4D;&#x8868;&#x793A;&#x6574;&#x6570;&#xFF0C;&#x7B2C;32&#x4F4D;&#x8868;&#x793A;&#x7B26;&#x53F7;&#x4F4D;&#xFF1A;0&#x8868;&#x793A;&#x6574;&#x6570;&#xFF0C;1&#x8868;&#x793A;&#x8D1F;&#x6570;&#x3002;&#x7B2C;32&#x4F4D;&#x53EB;&#x505A;&#x7B26;&#x53F7;&#x4F4D;&#xFF0C;&#x51B3;&#x5B9A;&#x4E86;&#x5176;&#x4ED6;&#x4F4D;&#x6570;&#x6570;&#x503C;&#x7684;&#x683C;&#x5F0F;<br></p>
+<p>&#x6B63;&#x6570;&#x4EE5;&#x7EAF;&#x4E8C;&#x8FDB;&#x5236;&#x683C;&#x5F0F;&#x5B58;&#x50A8;&#xFF0C;&#x8D1F;&#x6570;&#x4EE5;&#x4E8C;&#x8FDB;&#x5236;&#x8865;&#x7801;&#x5B58;&#x50A8;</p>
+<p>&#x8BA1;&#x7B97;&#x4E8C;&#x8FDB;&#x5236;&#x8865;&#x7801;&#x8FC7;&#x7A0B;&#xFF1A;</p>
+<ol>
+<li>&#x6C42;&#x8FD9;&#x4E2A;&#x6570;&#x503C;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x7801;<br><ul>
+<li>0000 0000 0000 0000 0000 0000 0001 0010</li>
+</ul>
+</li>
+<li>&#x6C42;&#x4E8C;&#x8FDB;&#x5236;&#x53CD;&#x7801;&#xFF08;&#x5373;0&#xFF0C;1&#x4E92;&#x6362;&#xFF09;<br><ul>
+<li>1111 1111 1111 1111 1111 1111 1110 1101</li>
+</ul>
+</li>
+<li>&#x5F97;&#x5230;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x53CD;&#x7801;&#x52A0;1<br><pre><code>1111 1111 1111 1111 1111 1111 1110 1101
+                                      1
+---------------------------------------
+1111 1111 1111 1111 1111 1111 1110 1110
+</code></pre></li>
+<li>ecmascript &#x4F1A;&#x5C3D;&#x529B;&#x9690;&#x85CF;&#x8FD9;&#x4E9B;&#x6240;&#x6709;&#x4FE1;&#x606F;&#xFF0C;&#x5728;&#x4EE5;&#x4E8C;&#x8FDB;&#x5236;&#x5B57;&#x7B26;&#x4E32;&#x5F62;&#x5F0F;&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x8D1F;&#x6570;&#x65F6;&#xFF0C;&#x53EA;&#x4F1A;&#x770B;&#x5230;&#x5728;&#x524D;&#x9762;&#x52A0;&#x4E86;&#x4E00;&#x4E2A;&#x7B26;&#x53F7;<pre><code>var g1 = 18;
+var g2 = -18;
+console.log( g1.toString(2) );    // 10010
+console.log( g2.toString(2) );    // -10010
+</code></pre></li>
+</ol>
+<p><strong>ecmascript &#x5BF9;&#x6570;&#x5B57;&#x5E94;&#x7528;&#x4F4D;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x4F1A;&#x5728;&#x540E;&#x53F0;&#x53D1;&#x751F;&#x5982;&#x4E0B;&#x7684;&#x8F6C;&#x6362;&#x8FC7;&#x7A0B;</strong></p>
+<ul>
+<li>&#x5C06;64&#x4F4D;&#x6570;&#x503C;&#x8F6C;&#x5316;&#x4E3A;32&#x4F4D;</li>
+<li>&#x6267;&#x884C;&#x4F4D;&#x64CD;&#x4F5C;</li>
+<li>&#x5728;&#x8F6C;&#x5316;&#x4E3A;64&#x4F4D;</li>
+<li>&#x526F;&#x6548;&#x5E94;&#xFF1A;NaN &#x548C; Infinity &#x5728;&#x5E94;&#x7528;&#x4F4D;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x4F1A;&#x88AB;&#x5F53;&#x4E3A;0&#x5904;&#x7406;</li>
+<li>&#x5BF9;&#x975E;&#x6570;&#x5B57;&#x5E94;&#x7528;&#x4F4D;&#x64CD;&#x4F5C;&#x7B26;&#x65F6;&#xFF0C;&#x5148;&#x8F6C;&#x6362;&#x6210;&#x6570;&#x5B57;&#xFF0C;&#x5728;&#x6267;&#x884C;&#x4F4D;&#x64CD;&#x4F5C;</li>
+</ul>
+<p><strong>&#x6309;&#x4F4D;&#x975E;&#xFF08;NOT&#xFF09;</strong></p>
+<ol>
+<li>&#x6309;&#x4F4D;&#x975E;&#x64CD;&#x4F5C;&#x7B26;&#x7531;&#x4E00;&#x4E2A;&#xFF08;&#xFF5E;&#xFF09;&#x8868;&#x793A;&#xFF0C;&#x6267;&#x884C;&#x7684;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#x8FD4;&#x56DE;&#x6570;&#x503C;&#x7684;&#x53CD;&#x7801;</li>
+</ol>
+<pre><code>var h1 = 18;      // 0000 0000 0000 0000 0000 0000 0001 0010
+var i1 = ~h1;     // 1111 1111 1111 1111 1111 1111 1110 1101 // 18&#x7684;&#x53CD;&#x7801;&#xFF0C;&#x8FD9;&#x4E2A;&#x6570;&#x4E3A;&#x8D1F;&#x6570;
+//                // 1111 1111 1111 1111 1111 1111 1110 1100 // &#x53CD;&#x7801;&#x51CF;1
+//                // 0000 0000 0000 0000 0000 0000 0001 0011 // &#x6C42;&#x53CD;&#x7801;&#xFF0C;&#x5F97;&#x5230;&#x8FD9;&#x4E2A;&#x6570;&#x6B63;&#x6570;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x7801;
+console.log(i1);  //                                     -19
+</code></pre><ol>
+<li>&#x6267;&#x884C;&#x6309;&#x4F4D;&#x975E;&#x7684;&#x672C;&#x8D28;&#xFF0C;&#x64CD;&#x4F5C;&#x6570;&#x7684;&#x8D1F;&#x503C;&#x51CF;1</li>
+</ol>
+<pre><code>console.log(~18)
+console.log(~-20)
+</code></pre><p><strong>&#x6309;&#x4F4D;&#x4E0E;&#xFF08;AND&#xFF09;</strong></p>
+<ul>
+<li>&#x4E24;&#x4E2A;&#x6570;&#x503C;&#x5BF9;&#x5E94;&#x4E8C;&#x8FDB;&#x5236;&#x4F4D;&#x6570;&#x90FD;&#x662F;1&#x624D;&#x8FD4;&#x56DE;1</li>
+</ul>
+<pre><code>var i1 = 2;
+var i2 = 4;
+console.log(i1.toString(2));  //  2  = 0000 0000 0000 0000 0000 0000 0000 0010
+console.log(i2.toString(2));  //  4  = 0000 0000 0000 0000 0000 0000 0000 0100
+console.log(i1 &amp; i2);         // AND = 0000 0000 0000 0000 0000 0000 0000 0000
+</code></pre><p><strong>&#x6309;&#x4F4D;&#x6216;&#xFF08;OR&#xFF09;</strong></p>
+<ul>
+<li>&#x4E24;&#x4E2A;&#x6570;&#x503C;&#x5BF9;&#x5E94;&#x4E8C;&#x8FDB;&#x5236;&#x4F4D;&#x6570;&#x6709;&#x4E00;&#x4E2A;&#x662F;1&#x8FD4;&#x56DE;1</li>
+</ul>
+<pre><code>var j1 = 2;
+var j2 = 4;
+console.log(j1.toString(2));  //  2  = 0000 0000 0000 0000 0000 0000 0000 0010
+console.log(j2.toString(2));  //  4  = 0000 0000 0000 0000 0000 0000 0000 0100
+console.log(j1 | j2);         //  OR = 0000 0000 0000 0000 0000 0000 0000 0110
+</code></pre><p><strong>&#x6309;&#x4F4D;&#x5F02;&#x6216;&#xFF08;XOR&#xFF09;</strong></p>
+<ul>
+<li>&#x4E24;&#x4E2A;&#x6570;&#x503C;&#x5BF9;&#x5E94;&#x4E8C;&#x8FDB;&#x5236;&#x4F4D;&#x6570;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x662F;1&#x8FD4;&#x56DE;1</li>
+</ul>
+<pre><code>var k1 = 2;
+var k2 = 4;
+console.log(k1.toString(2));  //  2  = 0000 0000 0000 0000 0000 0000 0000 0010
+console.log(k2.toString(2));  //  4  = 0000 0000 0000 0000 0000 0000 0000 0100
+console.log(k1 ^ k2);         // XOR = 0000 0000 0000 0000 0000 0000 0000 0110
+</code></pre><p><strong>&#x5DE6;&#x79FB;&#xFF08;&lt;&lt;&#xFF09;</strong></p>
+<ul>
+<li>&#x5DE6;&#x79FB;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x7B26;&#x53F7;&#x4F4D;</li>
+</ul>
+<pre><code>var l1 = 2;
+var l2 = l1 &lt;&lt; 5;
+console.log(l1.toString(2));  //    2     = 0000 0000 0000 0000 0000 0000 0000 0010
+console.log(l2.toString(2));  //  2 &lt;&lt; 5  = 0000 0000 0000 0000 0000 0000 0100 0000
+console.log(l2);              //   l2                                            64
+</code></pre><p><strong>&#x6709;&#x7B26;&#x53F7;&#x7684;&#x53F3;&#x79FB;&#xFF08;&gt;&gt;&#xFF09;</strong></p>
+<ul>
+<li>&#x4FDD;&#x7559;&#x7B26;&#x53F7;&#x4F4D;&#xFF08;&#x79FB;&#x52A8;31&#x4F4D;&#xFF09;</li>
+</ul>
+<pre><code>var m1 = 64;
+var m2 = m1 &gt;&gt; 5;
+console.log(m1.toString(2));  //    64     = 0000 0000 0000 0000 0000 0000 0100 0000
+console.log(m2.toString(2));  //  64 &gt;&gt; 5  = 0000 0000 0000 0000 0000 0000 0000 0010
+console.log(m2);              //    m2                                             2
+</code></pre><p><strong>&#x65E0;&#x7B26;&#x53F7;&#x7684;&#x53F3;&#x79FB;&#xFF08;&gt;&gt;&gt;&#xFF09;</strong></p>
+<ul>
+<li>&#x4E0D;&#x4FDD;&#x7559;&#x7B26;&#x53F7;&#x4F4D;&#xFF08;&#x79FB;&#x52A8;32&#x4F4D;&#xFF09;</li>
+<li>&#x5BF9;&#x8D1F;&#x503C;&#x5F71;&#x54CD;&#x8F83;&#x5927;</li>
+</ul>
+<pre><code>var n1 = -64;
+var n2 = n1 &gt;&gt;&gt; 5;
+console.log(n1.toString(2));  //     64      = 0000 0000 0000 0000 0000 0000 0100 0000
+//                            //               1111 1111 1111 1111 1111 1111 1011 1111
+//                            //               1111 1111 1111 1111 1111 1111 1100 0000
+console.log(n2.toString(2));  //  -64 &gt;&gt;&gt; 5  = 0000 0111 1111 1111 1111 1111 1111 1110
+console.log(n2);              //     n2                                      134217726
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"操作符","level":"1.2","depth":1,"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"md/chapter01-operator.md","mtime":"2019-07-15T15:56:19.785Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-15T13:56:22.948Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
