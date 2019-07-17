@@ -67,3 +67,44 @@ to: 进入路由对象
 from: 离开的路由对象
 next: 用来绝对跳转和取消导航
 
+
+##vuex
+定义状态使用 state
+状态的计算属性 getter
+修改状态，提交一个 mutation
+异步的状态，提交一个 action
+
+mapState几种写法（扩展在计算属性上）
+1. 接收一个函数（函数参数为state）
+2. key/value 形式
+3. 接收一个数组
+
+mapGetters（扩展在计算属性上）
+
+mapMutations、mapActions（扩展在methods上）
+1. key/value 形式
+2. mutation 传参写在行间
+
+
+##axios
+自定义请求实例
+axios.create({})
+
+transformRequest转换请求（只适合于put、post、patch）
+1. 转化发送数据（data）的格式
+2. 了解 content-type
+
+transformResponse转换响应
+1. 转换返回数据的格式
+
+validateStatus：设置请求状态成功状态码范围
+
+cancelToken: 取消请求
+
+并发请求
+1. axios.all()
+2. axios.spread() 分割并发请求参数
+
+axios.interceptors.request.use()请求拦截器（请求之前对config进行操作）
+axios.interceptors.response.use()请求拦截器（请求之前对config进行操作）
+
