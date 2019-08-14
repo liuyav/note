@@ -1,5 +1,7 @@
-# Summary
+* [介绍](README.md)
 
-* [Introduction](README.md)
-* [操作符](md/chapter01-operator.md)
+## Part I - 核心
+* [1. 操作符](md/chapter01-operator.md)
 
+## Part 2 - Advanced
+* [1. 函数柯里化](md/chapter02-curryfunction.md)
