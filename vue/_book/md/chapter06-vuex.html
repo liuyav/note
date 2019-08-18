@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>vue组件化设计 · GitBook</title>
+        <title>vue状态管理 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="chapter04-组件通信.html" />
+    <link rel="next" href="chapter07-principle.html" />
     
     
-    <link rel="prev" href="chapter02-axios.html" />
+    <link rel="prev" href="chapter05-router.html" />
     
 
     </head>
@@ -128,7 +128,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="chapter03-comdesign.html">
+        <li class="chapter " data-level="1.4" data-path="chapter03-comdesign.html">
             
                 <a href="chapter03-comdesign.html">
             
@@ -167,7 +167,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="chapter06-vuex.html">
+        <li class="chapter active" data-level="1.7" data-path="chapter06-vuex.html">
             
                 <a href="chapter06-vuex.html">
             
@@ -236,7 +236,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >vue组件化设计</a>
+        <a href=".." >vue状态管理</a>
     </h1>
 </div>
 
@@ -251,37 +251,26 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x7EC4;&#x4EF6;&#x5316;">&#x7EC4;&#x4EF6;&#x5316;</h2>
-<p>&#x5B66;&#x4E60; element ui &#x4E2D;&#x4F18;&#x79C0;&#x7684;&#x7EC4;&#x4EF6;&#x8BBE;&#x8BA1;</p>
-<p>vue-cli3 &#x4E2D;&#x5B89;&#x88C5; element&#xFF1A;vue add element</p>
-<h2 id="element-form-&#x8BBE;&#x8BA1;">element form &#x8BBE;&#x8BA1;</h2>
+                                <h2 id="vuex">vuex</h2>
+<p>&#x5B9A;&#x4E49;&#x72B6;&#x6001;&#x4F7F;&#x7528; state
+&#x72B6;&#x6001;&#x7684;&#x8BA1;&#x7B97;&#x5C5E;&#x6027; getter
+&#x4FEE;&#x6539;&#x72B6;&#x6001;&#xFF0C;&#x63D0;&#x4EA4;&#x4E00;&#x4E2A; mutation
+&#x5F02;&#x6B65;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x63D0;&#x4EA4;&#x4E00;&#x4E2A; action</p>
+<p>mapState&#x51E0;&#x79CD;&#x5199;&#x6CD5;&#xFF08;&#x6269;&#x5C55;&#x5728;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x4E0A;&#xFF09;</p>
 <ol>
-<li>input &#x7684; v-model &#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;<ul>
-<li>&#x4F20;&#x9012; value &#x5C5E;&#x6027;</li>
-<li>&#x76D1;&#x542C; input &#x4E8B;&#x4EF6;</li>
-</ul>
-</li>
-<li>slot &#x63D2;&#x69FD;&#x5B9E;&#x73B0;&#x7EC4;&#x4EF6;&#x5D4C;&#x5957;&#x8BBE;&#x8BA1;</li>
-<li>&#x6570;&#x636E;&#x6A21;&#x5F0F;&#x548C;&#x68C0;&#x9A8C;&#x89C4;&#x5219;&#x4F20;&#x9012;&#x7ED9;&#x5185;&#x90E8;&#x7EC4;&#x4EF6;<ul>
-<li>provide</li>
-<li>inject</li>
-</ul>
-</li>
-<li>input &#x503C;&#x53D1;&#x751F;&#x6539;&#x53D8;&#xFF0C;&#x600E;&#x6837;&#x901A;&#x77E5;&#x7236;&#x7EC4;&#x4EF6;&#x505A;&#x6821;&#x9A8C;&#xFF08;&#x6821;&#x9A8C;&#x89C4;&#x5219;&#x5728;input&#x7236;&#x7EC4;&#x4EF6;&#x4E0A;&#xFF09;<ul>
-<li>this.parent.$emit()</li>
-</ul>
-</li>
-<li>&#x600E;&#x6837;&#x8FDB;&#x884C;&#x6821;&#x9A8C;<ul>
-<li>&#x57FA;&#x4E8E; async-validator<ul>
-<li>new Schema(rules).validator({values}, err=&gt; {})</li>
-</ul>
-</li>
-</ul>
-</li>
+<li>&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF08;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x4E3A;state&#xFF09;</li>
+<li>key/value &#x5F62;&#x5F0F;</li>
+<li>&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;</li>
 </ol>
-<h2 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;">&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h2>
+<p>mapGetters&#xFF08;&#x6269;&#x5C55;&#x5728;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x4E0A;&#xFF09;</p>
+<p>mapMutations&#x3001;mapActions&#xFF08;&#x6269;&#x5C55;&#x5728;methods&#x4E0A;&#xFF09;</p>
 <ol>
-<li>&#x7EC4;&#x4EF6;&#x6807;&#x7B7E;&#x540D;&#x5B57;&#x5C0F;&#x5199;</li>
+<li>key/value &#x5F62;&#x5F0F;</li>
+<li>mutation &#x4F20;&#x53C2;&#x5199;&#x5728;&#x884C;&#x95F4;</li>
+</ol>
+<h2 id="&#x6280;&#x5DE7;">&#x6280;&#x5DE7;</h2>
+<ol>
+<li>vuex &#x7BA1;&#x7406;&#x6570;&#x636E;&#x5B9E;&#x73B0;&#x7F13;&#x5B58;</li>
 </ol>
 
                                 
@@ -310,12 +299,12 @@
 
             
                 
-                <a href="chapter02-axios.html" class="navigation navigation-prev " aria-label="Previous page: vue-axios">
+                <a href="chapter05-router.html" class="navigation navigation-prev " aria-label="Previous page: vue路由">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="chapter04-组件通信.html" class="navigation navigation-next " aria-label="Next page: vue组件通信">
+                <a href="chapter07-principle.html" class="navigation navigation-next " aria-label="Next page: vue工作机制">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -326,7 +315,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"vue组件化设计","level":"1.4","depth":1,"next":{"title":"vue组件通信","level":"1.5","depth":1,"path":"md/chapter04-组件通信.md","ref":"md/chapter04-组件通信.md","articles":[]},"previous":{"title":"vue-axios","level":"1.3","depth":1,"path":"md/chapter02-axios.md","ref":"md/chapter02-axios.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"md/chapter03-comdesign.md","mtime":"2019-08-18T08:25:40.807Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-18T06:51:05.180Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"vue状态管理","level":"1.7","depth":1,"next":{"title":"vue工作机制","level":"1.8","depth":1,"path":"md/chapter07-principle.md","ref":"md/chapter07-principle.md","articles":[]},"previous":{"title":"vue路由","level":"1.6","depth":1,"path":"md/chapter05-router.md","ref":"md/chapter05-router.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"md/chapter06-vuex.md","mtime":"2019-08-18T14:54:16.198Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-18T06:51:05.180Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

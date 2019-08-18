@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>vue组件化设计 · GitBook</title>
+        <title>vue项目架构 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="chapter04-组件通信.html" />
     
-    
-    <link rel="prev" href="chapter02-axios.html" />
+    <link rel="prev" href="chapter07-principle.html" />
     
 
     </head>
@@ -128,7 +126,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="chapter03-comdesign.html">
+        <li class="chapter " data-level="1.4" data-path="chapter03-comdesign.html">
             
                 <a href="chapter03-comdesign.html">
             
@@ -193,7 +191,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="chapter08-project.html">
+        <li class="chapter active" data-level="1.9" data-path="chapter08-project.html">
             
                 <a href="chapter08-project.html">
             
@@ -236,7 +234,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >vue组件化设计</a>
+        <a href=".." >vue项目架构</a>
     </h1>
 </div>
 
@@ -251,38 +249,55 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x7EC4;&#x4EF6;&#x5316;">&#x7EC4;&#x4EF6;&#x5316;</h2>
-<p>&#x5B66;&#x4E60; element ui &#x4E2D;&#x4F18;&#x79C0;&#x7684;&#x7EC4;&#x4EF6;&#x8BBE;&#x8BA1;</p>
-<p>vue-cli3 &#x4E2D;&#x5B89;&#x88C5; element&#xFF1A;vue add element</p>
-<h2 id="element-form-&#x8BBE;&#x8BA1;">element form &#x8BBE;&#x8BA1;</h2>
+                                <h2 id="ui-&#x6846;&#x67B6;&#x9009;&#x578B;">ui &#x6846;&#x67B6;&#x9009;&#x578B;</h2>
 <ol>
-<li>input &#x7684; v-model &#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;<ul>
-<li>&#x4F20;&#x9012; value &#x5C5E;&#x6027;</li>
-<li>&#x76D1;&#x542C; input &#x4E8B;&#x4EF6;</li>
-</ul>
-</li>
-<li>slot &#x63D2;&#x69FD;&#x5B9E;&#x73B0;&#x7EC4;&#x4EF6;&#x5D4C;&#x5957;&#x8BBE;&#x8BA1;</li>
-<li>&#x6570;&#x636E;&#x6A21;&#x5F0F;&#x548C;&#x68C0;&#x9A8C;&#x89C4;&#x5219;&#x4F20;&#x9012;&#x7ED9;&#x5185;&#x90E8;&#x7EC4;&#x4EF6;<ul>
-<li>provide</li>
-<li>inject</li>
-</ul>
-</li>
-<li>input &#x503C;&#x53D1;&#x751F;&#x6539;&#x53D8;&#xFF0C;&#x600E;&#x6837;&#x901A;&#x77E5;&#x7236;&#x7EC4;&#x4EF6;&#x505A;&#x6821;&#x9A8C;&#xFF08;&#x6821;&#x9A8C;&#x89C4;&#x5219;&#x5728;input&#x7236;&#x7EC4;&#x4EF6;&#x4E0A;&#xFF09;<ul>
-<li>this.parent.$emit()</li>
-</ul>
-</li>
-<li>&#x600E;&#x6837;&#x8FDB;&#x884C;&#x6821;&#x9A8C;<ul>
-<li>&#x57FA;&#x4E8E; async-validator<ul>
-<li>new Schema(rules).validator({values}, err=&gt; {})</li>
-</ul>
-</li>
+<li>&#x7EF4;&#x62A4;&#x56E2;&#x961F;</li>
+<li>&#x66F4;&#x65B0;&#x8FED;&#x4EE3;</li>
+<li>Github</li>
+<li>&#x6D4B;&#x8BD5;</li>
+<li>&#x7F3A;&#x70B9;</li>
+<li>&#x7279;&#x70B9;</li>
+</ol>
+<h2 id="ui-&#x6846;&#x67B6;">ui &#x6846;&#x67B6;</h2>
+<ol>
+<li>cube-ui&#xFF08;&#x79FB;&#x52A8;&#x7AEF;&#x3001;&#x540E;&#x7F16;&#x8BD1;&#x3001;create-api&#xFF09;</li>
+<li>vant&#xFF08;ssr&#x3001;ts&#xFF09;</li>
+<li>element ui&#xFF08;pc&#xFF09;</li>
+</ol>
+<h2 id="&#x8DEF;&#x7531;&#x5B88;&#x536B;">&#x8DEF;&#x7531;&#x5B88;&#x536B;</h2>
+<ol>
+<li>&#x8DEF;&#x7531;&#x751F;&#x547D;&#x5468;&#x671F; beforeEach&#xFF0C;&#x5168;&#x5C40;&#x5B88;&#x536B;&#xFF0C;&#x5728;&#x6BCF;&#x4E2A;&#x8DEF;&#x7531;&#x8FDB;&#x6765;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x90FD;&#x6709;&#x673A;&#x4F1A;&#x5224;&#x65AD;&#x4E00;&#x4E0B;</li>
+<li>&#x8FD9;&#x65F6;&#x5019;&#x770B;&#x8DEF;&#x7531;&#x5143;&#x6570;&#x636E;&#x91CC;&#x9762;&#x6709;&#x6CA1;&#x6709;&#x9700;&#x8981;&#x5224;&#x65AD;&#x7684;&#x5143;&#x6570;&#x636E;</li>
+<li>&#x62FF;&#x51FA;token&#xFF0C;&#x6709;&#x7684;&#x8BDD;&#x901A;&#x884C;&#xFF0C;&#x5426;&#x5219;&#xFF0C;&#x767B;&#x5F55;</li>
+</ol>
+<h2 id="&#x767B;&#x5F55;&#x72B6;&#x6001;&#x4FDD;&#x5B58;">&#x767B;&#x5F55;&#x72B6;&#x6001;&#x4FDD;&#x5B58;</h2>
+<p>&#x4FDD;&#x5B58; token &#x5728; localStorage &#x4E2D;</p>
+<h2 id="&#x4EE4;&#x724C;&#x673A;&#x5236;">&#x4EE4;&#x724C;&#x673A;&#x5236;</h2>
+<p><strong>Bearer Token&#x89C4;&#x8303;</strong></p>
+<ol>
+<li>&#x6982;&#x5FF5;&#xFF1A;&#x63CF;&#x8FF0;&#x5728; http &#x8BBF;&#x95EE;&#x548C; OAuth2 &#x4FDD;&#x62A4;&#x8D44;&#x6E90;&#x65F6;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x4EE4;&#x724C;&#x7684;&#x89C4;&#x8303;</li>
+<li>&#x7279;&#x70B9;&#xFF1A;&#x4EE4;&#x724C;&#x662F;&#x8EAB;&#x4EFD;&#x8BC1;&#x660E;&#xFF0C;&#x65E0;&#x9700;&#x8BC1;&#x660E;&#x4EE4;&#x724C;&#x7684;&#x6240;&#x6709;&#x6743;</li>
+<li>&#x5177;&#x4F53;&#x89C4;&#x5B9A;&#xFF1A;&#x5728;&#x8BF7;&#x6C42;&#x5934;&#x5B9A;&#x4E49; Authorization<ul>
+<li>Authorization: Bearer token</li>
 </ul>
 </li>
 </ol>
-<h2 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;">&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h2>
+<p><strong>Json Web Token</strong></p>
 <ol>
-<li>&#x7EC4;&#x4EF6;&#x6807;&#x7B7E;&#x540D;&#x5B57;&#x5C0F;&#x5199;</li>
+<li>&#x6982;&#x5FF5;&#xFF1A;&#x4EE4;&#x724C;&#x5177;&#x4F53;&#x5B9A;&#x4E49;&#x65B9;&#x5F0F;</li>
+<li>&#x89C4;&#x5B9A;&#xFF1A;&#x4EE4;&#x724C;&#x7531;&#x4E09;&#x90E8;&#x5206;&#x6784;&#x6210;&#x201C;&#x5934;&#x3001;&#x8F7D;&#x8377;&#x3001;&#x7B7E;&#x540D;&#x201D;<ul>
+<li>&#x5934;&#xFF1A;&#x5305;&#x542B;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#xFF0C;&#x4EE4;&#x724C;&#x7C7B;&#x578B;&#x7684;&#x4FE1;&#x606F;</li>
+<li>&#x8F7D;&#x8377;&#xFF1A;&#x5305;&#x542B;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x3001;&#x7B7E;&#x53D1;&#x65F6;&#x95F4;&#x548C;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x7B49;&#x4FE1;&#x606F;</li>
+<li>&#x7B7E;&#x540D;&#xFF1A;&#x6839;&#x636E;&#x5934;&#x3001;&#x8F7D;&#x8377;&#x53CA;&#x5BC6;&#x94A5;&#x5F97;&#x5230;&#x7684;hash&#x4E32;</li>
+</ul>
+</li>
+<li>&#x9ED8;&#x8BA4;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5; Hmac Sha1 256&#xFF08;hs256&#xFF09;</li>
 </ol>
+<h2 id="&#x8BF7;&#x6C42;&#x62E6;&#x622A;&#x54CD;&#x5E94;&#x5668;">&#x8BF7;&#x6C42;&#x62E6;&#x622A;&#x54CD;&#x5E94;&#x5668;</h2>
+<p><strong>&#x8BF7;&#x6C42;&#x62E6;&#x622A;&#x5668;</strong></p>
+<p>&#x8BF7;&#x6C42;&#x4E4B;&#x524D;&#xFF0C;&#x628A; token &#x5E26;&#x4E0A;</p>
+<p><strong>&#x8BF7;&#x6C42;&#x54CD;&#x5E94;&#x5668;</strong></p>
+<p>&#x8BF7;&#x6C42;&#x4E4B;&#x540E;&#xFF0C;&#x628A;</p>
 
                                 
                                 </section>
@@ -310,14 +325,10 @@
 
             
                 
-                <a href="chapter02-axios.html" class="navigation navigation-prev " aria-label="Previous page: vue-axios">
+                <a href="chapter07-principle.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: vue工作机制">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="chapter04-组件通信.html" class="navigation navigation-next " aria-label="Next page: vue组件通信">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -326,7 +337,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"vue组件化设计","level":"1.4","depth":1,"next":{"title":"vue组件通信","level":"1.5","depth":1,"path":"md/chapter04-组件通信.md","ref":"md/chapter04-组件通信.md","articles":[]},"previous":{"title":"vue-axios","level":"1.3","depth":1,"path":"md/chapter02-axios.md","ref":"md/chapter02-axios.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"md/chapter03-comdesign.md","mtime":"2019-08-18T08:25:40.807Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-18T06:51:05.180Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"vue项目架构","level":"1.9","depth":1,"previous":{"title":"vue工作机制","level":"1.8","depth":1,"path":"md/chapter07-principle.md","ref":"md/chapter07-principle.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"md/chapter08-project.md","mtime":"2019-08-18T14:08:08.068Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-18T06:51:05.180Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
