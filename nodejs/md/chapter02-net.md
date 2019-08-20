@@ -30,8 +30,6 @@
 2. 预检请求：put、delete等都有options类型请求，设置header
 3. nginx 反向代理（含义）
 
-## session
-
 ## 实战爬虫
 cheerio iconv-lites request
 
@@ -51,6 +49,10 @@ cheerio iconv-lites request
 
 ## 工具
 1. live-server
+2. process on 思维导图
+3. swagger
+4. kibanna
+5. es
 
 ## 目标
 1. 使用 socket.io 编写一个聊天工具
